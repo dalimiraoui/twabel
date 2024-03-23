@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './components/header/header.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchModalComponent } from './components/search-modal/search-modal.component';
@@ -12,7 +11,6 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
 
 @NgModule({
   declarations: [
-    HeaderComponent,
     SpinnerComponent,
     NavbarComponent,
     SearchModalComponent,
@@ -21,6 +19,7 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
     BackToTopComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [NavbarComponent, FooterComponent, SpinnerComponent,CopyrightComponent, BackToTopComponent, SearchModalComponent]
 })
 export class SharedModule { }
